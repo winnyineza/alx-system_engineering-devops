@@ -1,7 +1,2 @@
-<<<<<<< HEAD
-#!bin/bash
-echo $(printf $PATH | tr ":" "\n" | wc -w)
-=======
 #!/bin/bash
-echo $((`echo $PATH | grep -o ":/" | wc -l`+1))
->>>>>>> 95fdc08dda8a5c69c7b7377ac86d7d1bb5c9779f
+echo $PATH | tr ":" "\n" | wc -l
