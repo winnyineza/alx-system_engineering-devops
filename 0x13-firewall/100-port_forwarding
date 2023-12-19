@@ -50,5 +50,5 @@ frontend www-https
 backend web-backend
         balance roundrobin
         redirect scheme https code 301 if !{ ssl_fc }
-        server 306921-web-01 100.26.214.140 check
-        server 306921-web-02 100.26.178.87 check
+        server 5767-web-01 52.91.60.40:80 check
+        server 5767-web-02 54.198.208.63:80 check
